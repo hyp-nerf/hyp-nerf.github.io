@@ -1,0 +1,57 @@
+<section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Try it out yourself!</h2>
+          <div class="content has-text-justified">
+            <div class="video-container">
+              <video id="videoPlayer" autoplay muted loop playsinline height="100%">
+                <source src="static/videos/Teaser_hypnerf.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="button-grid">
+              <div class="toggle-button" data-video-source="video1.mp4">Video 1</div>
+              <div class="toggle-button" data-video-source="video2.mp4">Video 2</div>
+              <div class="toggle-button" data-video-source="video3.mp4">Video 3</div>
+              <div class="toggle-button" data-video-source="video4.mp4">Video 4</div>
+              <div class="toggle-button" data-video-source="video5.mp4">Video 5</div>
+              <div class="toggle-button" data-video-source="video6.mp4">Video 6</div>
+              <div class="toggle-button" data-video-source="video7.mp4">Video 7</div>
+              <div class="toggle-button" data-video-source="video8.mp4">Video 8</div>
+            </div>
+
+            <script>
+              const videoPlayer = document.getElementById('videoPlayer');
+              const toggleButtons = document.querySelectorAll('.toggle-button');
+
+              let selectedButtons = [];
+
+              toggleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                  if (selectedButtons.length < 2 || selectedButtons.includes(button)) {
+                    // Toggle the 'active' class on the clicked button
+                    button.classList.toggle('active');
+
+                    if (button.classList.contains('active')) {
+                      // Add the button to the selectedButtons array
+                      selectedButtons.push(button);
+                    } else {
+                      // Remove the button from the selectedButtons array
+                      selectedButtons = selectedButtons.filter(b => b !== button);
+                    }
+
+                    // Update the video source based on the selected buttons
+                    const selectedSources = selectedButtons.map(btn => btn.getAttribute('data-video-source'));
+                    videoPlayer.src = selectedSources.join('|');
+                    videoPlayer.load();
+                  }
+                });
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

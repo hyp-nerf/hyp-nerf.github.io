@@ -155,3 +155,27 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.video-container {
+  text-align: center;
+}
+.video-container video {
+  max-width: 100%;
+}
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.toggle-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  user-select: none;
+}
+.toggle-button.active {
+  background-color: #007BFF;
+  color: white;
+}
