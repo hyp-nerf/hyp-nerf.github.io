@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="HyP-NeRF: Learning Improved NeRF Priors using a HyperNetwork">
+  <meta name="description" content="HyP-NeRF: Learning Improved NeRF Priors using a HyperNetwork">
   <meta name="keywords" content="HyP-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HyP-NeRF: Learning Improved NeRF Priors using a HyperNetwork</title>
 
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -27,9 +25,10 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -70,61 +69,61 @@
 </nav> -->
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">HyP-NeRF: Learning Improved NeRF Priors using a HyperNetwork</h1>
-          <h2 class="title is-3 publication-venue">NeurIPS 2023</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://bipashasen.github.io/">Bipasha Sen</a><sup>⭐ 1️⃣</sup>,</span>
-            <span class="author-block">
-              <a href="https://vanhalen42.github.io/">Gaurav Singh</a><sup>⭐ 1️⃣</sup>,</span>
-            <span class="author-block">
-              <a href="https://skymanaditya1.github.io/">Aditya Agarwal</a><sup>⭐ 1️⃣</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=Ni6qG7wAAAAJ">Rohith Agaram</a><sup>1️⃣</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=QDuPGHwAAAAJ">K. Madhava Krishna</a><sup>1️⃣</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://cs.brown.edu/people/ssrinath/">Srinath Sridhar</a><sup>2️⃣</sup>,
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>⭐</sup>Equal Contribution,</span>
-            <span class="author-block"><sup>1️⃣</sup>IIIT Hyderabad,</span>
-            <span class="author-block"><sup>2️⃣</sup>Brown University</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2306.06093.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
+            <h1 class="title is-1 publication-title">HyP-NeRF: Learning Improved NeRF Priors using a HyperNetwork</h1>
+            <h2 class="title is-3 publication-venue">NeurIPS 2023</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                  <a href="https://bipashasen.github.io/">Bipasha Sen</a><sup>⭐ 1️⃣</sup>,</span>
+                <span class="author-block">
+                  <a href="https://vanhalen42.github.io/">Gaurav Singh</a><sup>⭐ 1️⃣</sup>,</span>
+                <span class="author-block">
+                  <a href="https://skymanaditya1.github.io/">Aditya Agarwal</a><sup>⭐ 1️⃣</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=Ni6qG7wAAAAJ">Rohith Agaram</a><sup>1️⃣</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=QDuPGHwAAAAJ">K. Madhava Krishna</a><sup>1️⃣</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://cs.brown.edu/people/ssrinath/">Srinath Sridhar</a><sup>2️⃣</sup>,
+                </span>
+              </div>
+
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>⭐</sup>Equal Contribution,</span>
+                <span class="author-block"><sup>1️⃣</sup>IIIT Hyderabad,</span>
+                <span class="author-block"><sup>2️⃣</sup>Brown University</span>
+              </div>
+
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- PDF Link. -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2306.06093.pdf"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
                   </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2306.06093"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2306.06093"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
+                  <!-- Video Link. -->
+                  <!-- <span class="link-block">
                 <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -133,18 +132,17 @@
                   <span>Video</span>
                 </a>
               </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
+                  <!-- Code Link. -->
+                  <span class="link-block">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (Coming Soon)</span>
+                    </a>
                   </span>
-                  <span>Code (Coming Soon)</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
+                  <!-- Dataset Link. -->
+                  <!-- <span class="link-block">
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -153,33 +151,32 @@
                   <span>Data</span>
                   </a>
               </span> -->
-            </div>
+                </div>
 
+              </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/Teaser_hypnerf.mp4"
-                type="video/mp4">
-      </video>
-      <!-- <h2 class="subtitle has-text-centered">
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video id="teaser" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/applications_teaser.mp4" type="video/mp4">
+        </video>
+        <!-- <h2 class="subtitle has-text-centered">
         <span class="dnerf">HyP-NeRF</span> turns selfie videos from your phone into
         free-viewpoint
         portraits.
       </h2> -->
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- <section class="hero is-light is-small">
+  <!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -237,26 +234,37 @@
 </section> -->
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Neural Radiance Fields (NeRF) have become an increasingly popular representation to capture high-quality appearance and shape of scenes and objects. However, learning generalizable NeRF priors over categories of scenes or objects has been challenging due to the high dimensionality of network weight space. 
-          </p>
-          <p>
-            To address the limitations of existing work on generalization, multi-view consistency and to improve quality, we propose <span class="dnerf">HyP-NeRF</span>, a latent conditioning method for learning generalizable category-level NeRF priors using hypernetworks. Rather than using hypernetworks to estimate only the weights of a NeRF, we estimate both the weights and the multi-resolution hash encodings resulting in significant quality gains. To improve quality even further, we incorporate a denoise and finetune strategy that denoises images rendered from NeRFs estimated by the hypernetwork and finetunes it while retaining multiview consistency. These improvements enable us to use HyP-NeRF as a generalizable prior for multiple downstream tasks including NeRF reconstruction from single-view or cluttered scenes and text-to-NeRF. We provide qualitative comparisons and evaluate HyP-NeRF on three tasks: generalization, compression, and retrieval, demonstrating our state-of-the-art results.
-          </p>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Neural Radiance Fields (NeRF) have become an increasingly popular representation to capture high-quality
+              appearance and shape of scenes and objects. However, learning generalizable NeRF priors over categories of
+              scenes or objects has been challenging due to the high dimensionality of network weight space.
+            </p>
+            <p>
+              To address the limitations of existing work on generalization, multi-view consistency and to improve
+              quality, we propose <span class="dnerf">HyP-NeRF</span>, a latent conditioning method for learning
+              generalizable category-level NeRF priors using hypernetworks. Rather than using hypernetworks to estimate
+              only the weights of a NeRF, we estimate both the weights and the multi-resolution hash encodings resulting
+              in significant quality gains. To improve quality even further, we incorporate a denoise and finetune
+              strategy that denoises images rendered from NeRFs estimated by the hypernetwork and finetunes it while
+              retaining multiview consistency. These improvements enable us to use HyP-NeRF as a generalizable prior for
+              multiple downstream tasks including NeRF reconstruction from single-view or cluttered scenes and
+              text-to-NeRF. We provide qualitative comparisons and evaluate HyP-NeRF on three tasks: generalization,
+              compression, and retrieval, demonstrating our state-of-the-art results.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <!--/ Abstract. -->
+      <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
+      <!-- Paper video. -->
+      <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -265,34 +273,48 @@
         </div>
       </div>
     </div> -->
-    <!--/ Paper video. -->
-  </div>
-</section>
+      <!--/ Paper video. -->
+    </div>
+  </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Method Overview</h2>
-        <div class="content has-text-justified">
-          <div id="stage"; style="position:relative;overflow: hidden;">
-            <!-- <img src="static/images/arch.jpg" class="center" style="transform:scale(1.0);width:100%;height:100%; max-width:500px; text-align:center"> -->
-            <img src="static/images/arch.jpg" class="center" style="transform:scale(1.0);text-align:center">
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Architecture</h2>
+          <div class="content has-text-justified">
+            <div id="stage" ; style="position:relative;overflow: hidden;">
+              <!-- <img src="static/images/arch.jpg" class="center" style="transform:scale(1.0);width:100%;height:100%; max-width:500px; text-align:center"> -->
+              <img src="static/images/arch.jpg" class="center" style="transform:scale(1.0);text-align:center">
+            </div>
+            <p>
+              <b>HyP-NeRF</b> is trained and inferred in two steps. In the first step <b>(top)</b>, our hypernetwork,
+              <b>M</b> is trained to predict the parameters of a NeRF model, <b>f<sub>n</sub></b>corresponding to object
+              instance <b>n</b>. At this stage, the NeRF model acts as a set of differentiable layers to compute the
+              volumetric rendering loss, using which <b>M</b> is trained on a set of <i>N</i> objects, thereby learning
+              a prior Φ = {Φ<sub>S</sub>, Φ<sub>C</sub>} over the shape and color codes given by <b>S</b> and <b>C</b>
+              respectively. In the second step <b>(bottom)</b>, the quality of the predicted multiview consistent NeRF,
+              <b>f<sub>n</sub></b> is improved using a denoising network trained directly in the image space. To do
+              this, <b>f<sub>n</sub></b> is rendered from multiple known poses to a set of images that are improved to
+              photorealistic quality. <b>f<sub>n</sub></b> is then finetuned on these improved images. Importantly,
+              since <b>f<sub>n</sub></b> is only finetuned and not optimized from scratch, and thus <b>f<sub>n</sub></b>
+              retains the multiview consistency whilst improving in terms of texture and shape quality.
+            </p>
           </div>
-          <p>
-            <b>HyP-NeRF</b> is trained and inferred in two steps. In the first step <b>(top)</b>, our hypernetwork, <b>M</b> is trained to predict the parameters of a NeRF model, <b>f<sub>n</sub></b>corresponding to object instance <b>n</b>. At this stage, the NeRF model acts as a set of differentiable layers to compute the volumetric rendering loss, using which <b>M</b> is trained on a set of <i>N</i> objects, thereby learning a prior Φ = {Φ<sub>S</sub>, Φ<sub>C</sub>} over the shape and color codes given by <b>S</b> and <b>C</b> respectively. In the second step <b>(bottom)</b>, the quality of the predicted multiview consistent NeRF, <b>f<sub>n</sub></b> is improved using a denoising network trained directly in the image space. To do this, <b>f<sub>n</sub></b> is rendered from multiple known poses to a set of images that are improved to photorealistic quality. <b>f<sub>n</sub></b> is then finetuned on these improved images. Importantly, since <b>f<sub>n</sub></b> is only finetuned and not optimized from scratch, and thus <b>f<sub>n</sub></b> retains the multiview consistency whilst improving in terms of texture and shape quality.
-          </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{sen2023hypnerf,
+    </div>
+  </section>
+
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{hypnerf2023,
       title={HyP-NeRF: Learning Improved NeRF Priors using a HyperNetwork}, 
       author={Bipasha Sen and Gaurav Singh and Aditya Agarwal and Rohith Agaram and K Madhava Krishna and Srinath Sridhar},
       year={2023},
@@ -300,26 +322,26 @@
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }</code></pre>
-  </div>
-</section>
+    </div>
+  </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>. It is borrowing the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website.
-          </p>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>. It is borrowing the <a
+                href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
-
-
