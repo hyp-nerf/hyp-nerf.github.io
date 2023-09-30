@@ -245,8 +245,7 @@
               Neural Radiance Fields (NeRF) have become an increasingly popular representation to capture high-quality
               appearance and shape of scenes and objects. However, learning generalizable NeRF priors over categories of
               scenes or objects has been challenging due to the high dimensionality of network weight space.
-            </p>
-            <p>
+
               To address the limitations of existing work on generalization, multi-view consistency and to improve
               quality, we propose <span class="dnerf">HyP-NeRF</span>, a latent conditioning method for learning
               generalizable category-level NeRF priors using hypernetworks. Rather than using hypernetworks to estimate
@@ -277,20 +276,33 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/Approach.mp4" type="video/mp4">
+            </video>
+          </div>
+          <br />
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+
+      <div class="columns is-centered">
+        <div class="column is-full-width">
           <h2 class="title is-3">Architecture</h2>
           <div class="content has-text-justified">
-            <div id="stage" ; style="position:relative;overflow: hidden;">
-              <!-- <img src="static/images/arch.jpg" class="center" style="transform:scale(1.0);width:100%;height:100%; max-width:500px; text-align:center"> -->
-              <img src="static/images/arch.jpg" class="center" style="transform:scale(1.0);text-align:center">
-            </div>
             <p>
-              <b>HyP-NeRF</b> is trained and inferred in two steps. In the first step <b>(top)</b>, our hypernetwork,
+              <span class="coolname">HyP-NeRF</span> is trained and inferred in two steps. In the first step <b>(top)</b>, our hypernetwork,
               <b>M</b> is trained to predict the parameters of a NeRF model, <b>f<sub>n</sub></b>corresponding to object
               instance <b>n</b>. At this stage, the NeRF model acts as a set of differentiable layers to compute the
               volumetric rendering loss, using which <b>M</b> is trained on a set of <i>N</i> objects, thereby learning
@@ -302,14 +314,21 @@
               since <b>f<sub>n</sub></b> is only finetuned and not optimized from scratch, and thus <b>f<sub>n</sub></b>
               retains the multiview consistency whilst improving in terms of texture and shape quality.
             </p>
+            <img src="./static/images/arch.jpg" />
           </div>
+          <br />
         </div>
       </div>
 
     </div>
   </section>
 
-
+  <section class="section" id="Acknowledgement">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgements</h2>
+      <p>This work was supported by NSF IIS #2143576, NSF CNS #2038897, an STTR Award from Traverse Inc., NSF CloudBank, and an AWS Cloud Credits award.</p>
+    </div>
+  </section>
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
